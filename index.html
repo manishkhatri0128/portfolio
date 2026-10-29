@@ -1,219 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manish Khatri — Java Backend Developer</title>
-<meta name="description" content="Portfolio of Manish Khatri, Java Backend Developer — Java, SQL/MySQL, JDBC, Maven.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manish Khatri — Java Backend Developer</title>
+  <meta name="description" content="Portfolio of Manish Khatri, Java Backend Developer — Java, SQL/MySQL, JDBC, Maven.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="glow" aria-hidden="true"></div>
 
-<header class="nav">
-  <a href="#top" class="nav__brand">MK<span class="dot">.</span></a>
-  <nav class="nav__links">
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <a href="Manish_khatri__.pdf" class="btn btn--ghost" download>Resume</a>
-</header>
+  <header class="nav">
+    <a href="#top" class="nav__brand">MK<span>_</span></a>
+    <nav class="nav__links">
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#experience">experience</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a href="Manish_Khatri_f.pdf" class="btn btn--ghost" download>Resume</a>
+  </header>
 
-<main>
+  <main>
 
-  <!-- HERO -->
-  <section id="top" class="hero">
-    <div class="hero__text">
-      <p class="eyebrow">Java Backend Developer</p>
-      <h1>Manish Khatri</h1>
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <p class="hero__role">Java Full-Stack Developer · Jaipur, India</p>
+      <h1 class="hero__name" id="name"><span>Manish</span><span>Khatri</span></h1>
       <p class="hero__lede">
-        I build reliable, database-driven applications with Java, SQL/MySQL,
-        JDBC, Hibernate/JPA and Maven — and I'm growing into Spring Boot
-        and REST APIs to build modern backend systems.
+        Aspiring Java Full Stack Developer with knowledge of Java, MySQL, JDBC, Hibernate/JPA, Maven, Spring
+        Framework, and Spring MVC. Passionate about building efficient applications, solving problems, and
+        continuously learning new technologies.
       </p>
       <div class="hero__cta">
         <a href="#contact" class="btn btn--primary">Get in touch</a>
-        <a href="Manish_Khatri__.pdf" class="btn btn--ghost" download>Download résumé</a>
+        <a href="Manish_Khatri_f.pdf" class="btn btn--ghost" download>Download résumé</a>
       </div>
-      <p class="hero__location">Jaipur, Rajasthan, India</p>
+
+      <div class="console" id="console">
+        <div class="console__bar"><b></b><b></b><b></b><span>mk@portfolio — mysql&gt;</span></div>
+        <div class="console__out" id="out" aria-live="polite">
+          <p class="dim">Welcome. Type <em>help</em> and press Enter. Yes, it works.</p>
+        </div>
+        <label class="console__in">
+          <span>mysql&gt;</span>
+          <input id="cmd" type="text" autocomplete="off" spellcheck="false" placeholder="help" aria-label="Terminal command">
+        </label>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div>
+        <span>JAVA</span><span>JDBC</span><span>HIBERNATE</span><span>SPRING MVC</span><span>MYSQL</span><span>MAVEN</span><span>JPA</span><span>GIT</span>
+        <span>JAVA</span><span>JDBC</span><span>HIBERNATE</span><span>SPRING MVC</span><span>MYSQL</span><span>MAVEN</span><span>JPA</span><span>GIT</span>
+      </div>
     </div>
 
-    <div class="hero__terminal" aria-hidden="true">
-      <div class="terminal">
-        <div class="terminal__bar">
-          <span></span><span></span><span></span>
-          <p>query.sql</p>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="q"><b>SELECT</b> * <b>FROM</b> skills;</h2>
+      <div class="skills-grid">
+        <div class="card skill-card">
+          <h3>Programming</h3>
+          <div class="tags"><span>Java</span></div>
         </div>
-        <div class="terminal__body">
-          <p><span class="tok-kw">SELECT</span> * <span class="tok-kw">FROM</span> developers</p>
-          <p><span class="tok-kw">WHERE</span> name = <span class="tok-str">'Manish Khatri'</span></p>
-          <p><span class="tok-kw">AND</span> stack <span class="tok-kw">LIKE</span> <span class="tok-str">'%Java%'</span>;</p>
-          <p class="terminal__result">→ 1 row returned<span class="cursor">&nbsp;</span></p>
+        <div class="card skill-card">
+          <h3>Core Java</h3>
+          <div class="tags">
+            <span>OOP</span><span>Strings</span><span>Exception Handling</span>
+            <span>Collections</span><span>Lambda Expressions</span>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <h2><span class="eyebrow">01</span> Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Programming</h3>
-        <div class="tags"><span>Java</span></div>
-      </div>
-      <div class="skill-card">
-        <h3>Core Java</h3>
-        <div class="tags">
-          <span>OOP</span><span>Strings</span><span>Exception Handling</span>
-          <span>Collections</span><span>Lambda Expressions</span>
+        <div class="card skill-card skill-card--wide">
+          <h3>Backend &amp; Database</h3>
+          <div class="tags">
+            <span>JDBC</span><span>SQL</span><span>MySQL</span><span>Maven</span><span>Hibernate</span><span>Spring Framework</span><span>Spring MVC</span>
+          </div>
         </div>
-      </div>
-      <div class="skill-card">
-        <h3>Backend &amp; Database</h3>
-        <div class="tags">
-          <span>JDBC</span><span>SQL</span><span>MySQL</span><span>Maven</span><span>Hibernate</span>
+        <div class="card skill-card">
+          <h3>Web</h3>
+          <div class="tags"><span>HTML</span><span>CSS</span></div>
+        </div>
+        <div class="card skill-card">
+          <h3>Tools</h3>
+          <div class="tags">
+            <span>Git</span><span>GitHub</span><span>IntelliJ IDEA</span><span>VS Code</span>
+          </div>
         </div>
       </div>
-      <div class="skill-card">
-        <h3>Web</h3>
-        <div class="tags"><span>HTML</span><span>CSS</span></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="q"><b>SELECT</b> * <b>FROM</b> projects;</h2>
+      <div class="projects-grid">
+
+        <article class="card project-card">
+          <p class="stack">Java · Hibernate · Maven · MySQL</p>
+          <h3>Personal Finance Tracker</h3>
+          <ul>
+            <li>Built a Personal Finance Tracker with Java, Hibernate (JPA), and MySQL for tracking income/expense
+              transactions.</li>
+            <li>Designed a relational schema with Category–Transaction mapping and implemented CRUD via Hibernate ORM.
+            </li>
+            <li>Built a spending insights feature using HQL aggregate queries (SUM, GROUP BY) for monthly category
+              breakdowns.</li>
+            <li>Deployed a console-based interface for adding transactions, viewing records, and generating instant
+              spending insights.</li>
+          </ul>
+        </article>
+
+        <article class="card project-card">
+          <p class="stack">Java · JDBC · Maven · MySQL</p>
+          <h3>Library Management System</h3>
+          <ul>
+            <li>Built a database-driven Java application for managing books and library records.</li>
+            <li>Used JDBC and PreparedStatement for database connectivity and CRUD operations.</li>
+            <li>Used Maven to manage project structure and dependencies.</li>
+          </ul>
+        </article>
+
       </div>
-      <div class="skill-card">
-        <h3>Tools</h3>
-        <div class="tags">
-          <span>Git</span><span>GitHub</span><span>IntelliJ IDEA</span>
-          <span>VS Code</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2><span class="eyebrow">02</span> Projects</h2>
-    <div class="projects-grid">
-
-      <article class="project-card">
-        <p class="project-card__stack">Java · Hibernate · Maven · MySQL</p>
-        <h3>Personal Finance Tracker</h3>
-        <ul>
-          <li>Built a Personal Finance Tracker with Java, Hibernate (JPA), and MySQL for tracking income/expense transactions.</li>
-          <li>Designed a relational schema with Category–Transaction mapping and implemented CRUD via Hibernate ORM.</li>
-          <li>Built a spending insights feature using HQL aggregate queries (SUM, GROUP BY) for monthly category breakdowns.</li>
-          <li>Deployed a console-based interface for adding transactions, viewing records, and generating instant spending insights.</li>
-        </ul>
-      </article>
-
-      <article class="project-card">
-        <p class="project-card__stack">Java · JDBC · Maven · MySQL</p>
-        <h3>Library Management System</h3>
-        <ul>
-          <li>Built a database-driven Java application for managing books and library records.</li>
-          <li>Used JDBC and PreparedStatement for database connectivity and CRUD operations.</li>
-          <li>Used Maven to manage project structure and dependencies.</li>
-        </ul>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <h2><span class="eyebrow">03</span> Experience</h2>
-    <div class="experience-card">
-      <div class="experience-card__head">
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="q"><b>SELECT</b> * <b>FROM</b> experience;</h2>
+      <div class="card experience-card">
         <h3>Java Full Stack Developer Intern</h3>
-        <p class="experience-card__meta">AU Ignite Future Skill Academy · 3 Months</p>
+        <p class="stack">AU Ignite Future Skill Academy · 3 Months</p>
+        <ul>
+          <li>Completed a 3-month Java Full Stack Development internship.</li>
+          <li>Gained hands-on exposure to Java programming, web development, and database management.</li>
+          <li>Worked with concepts relevant to application development and backend/database integration.</li>
+        </ul>
       </div>
-      <ul>
-        <li>Completed a 3-month Java Full Stack Development internship.</li>
-        <li>Gained hands-on exposure to Java programming, web development, and database management.</li>
-        <li>Worked with concepts relevant to application development and backend/database integration.</li>
-      </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="section">
-    <h2><span class="eyebrow">04</span> Education</h2>
-    <div class="edu-list">
-      <div class="edu-row">
-        <div>
-          <h3>Bachelor of Computer Applications (BCA)</h3>
-          <p>University of Rajasthan</p>
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2 class="q"><b>SELECT</b> * <b>FROM</b> education;</h2>
+      <div class="edu-list">
+        <div class="card edu-row">
+          <div>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>University of Rajasthan</p>
+          </div>
+          <div class="edu-row__meta"><span>2023 – 2026</span><span>CGPA 7.51/10</span></div>
         </div>
-        <div class="edu-row__meta">
-          <span>2023 – 2026</span>
-          <span>CGPA 7.51/10</span>
+        <div class="card edu-row">
+          <div>
+            <h3>Class XII</h3>
+            <p>RBSE</p>
+          </div>
+          <div class="edu-row__meta"><span>2022 – 2023</span><span>69%</span></div>
         </div>
-      </div>
-      <div class="edu-row">
-        <div>
-          <h3>Class XII</h3>
-          <p>RBSE</p>
-        </div>
-        <div class="edu-row__meta">
-          <span>2022 – 2023</span>
-          <span>69%</span>
-        </div>
-      </div>
-      <div class="edu-row">
-        <div>
-          <h3>Class X</h3>
-          <p>RBSE</p>
-        </div>
-        <div class="edu-row__meta">
-          <span>2020 – 2021</span>
-          <span>72%</span>
+        <div class="card edu-row">
+          <div>
+            <h3>Class X</h3>
+            <p>RBSE</p>
+          </div>
+          <div class="edu-row__meta"><span>2020 – 2021</span><span>72%</span></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section">
-    <h2><span class="eyebrow">05</span> Certifications</h2>
-    <div class="cert-list">
-      <div class="cert-chip">Java Full Stack Developer Certification — AU Ignite Future Skill Academy</div>
-      <div class="cert-chip">SQL (Basic) Certification — HackerRank</div>
-    </div>
-  </section>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <h2 class="q"><b>SELECT</b> * <b>FROM</b> certifications;</h2>
+      <div class="cert-list">
+        <div class="cert-chip">Java Full Stack Developer Certification — AU Ignite Future Skill Academy</div>
+        <div class="cert-chip">SQL (Basic) Certification — HackerRank</div>
+      </div>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-    <h2><span class="eyebrow">06</span> Get in touch</h2>
-    <p class="contact__lede">Open to Java full stack Developer internships and entry-level roles.</p>
-    <div class="contact-grid">
-      <a href="mailto:manishkhatri0221@gmail.com" class="contact-item">
-        <span class="contact-item__label">Email</span>
-        <span class="contact-item__value">manishkhatri0221@gmail.com</span>
-      </a>
-      <a href="tel:+919351019077" class="contact-item">
-        <span class="contact-item__label">Phone</span>
-        <span class="contact-item__value">+91 93510 19077</span>
-      </a>
-      <a href="https://www.linkedin.com/in/manishkhatri0128" target="_blank" rel="noopener" class="contact-item">
-        <span class="contact-item__label">LinkedIn</span>
-        <span class="contact-item__value">Manish Khatri</span>
-      </a>
-      <a href="https://github.com/manishkhatri0128" target="_blank" rel="noopener" class="contact-item">
-        <span class="contact-item__label">GitHub</span>
-        <span class="contact-item__value">manishkhatri0128</span>
-      </a>
-    </div>
-  </section>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="q"><b>INSERT INTO</b> inbox <b>VALUES</b> ('you');</h2>
+      <p class="contact__lede">Open to Java full stack Developer internships and entry-level roles.</p>
+      <div class="contact-grid">
+        <a href="mailto:manishkhatri0221@gmail.com" class="card contact-item">
+          <span class="contact-item__label">Email</span>
+          <span class="contact-item__value">manishkhatri0221@gmail.com</span>
+        </a>
+        <a href="tel:+919351019077" class="card contact-item">
+          <span class="contact-item__label">Phone</span>
+          <span class="contact-item__value">+91 93510 19077</span>
+        </a>
+        <a href="https://www.linkedin.com/in/manishkhatri0128" target="_blank" rel="noopener" class="card contact-item">
+          <span class="contact-item__label">LinkedIn</span>
+          <span class="contact-item__value">Manish Khatri</span>
+        </a>
+        <a href="https://github.com/manishkhatri0128" target="_blank" rel="noopener" class="card contact-item">
+          <span class="contact-item__label">GitHub</span>
+          <span class="contact-item__value">manishkhatri0128</span>
+        </a>
+      </div>
+    </section>
 
-</main>
+  </main>
 
-<footer class="footer">
-  <p>Manish Khatri · Jaipur, Rajasthan</p>
-</footer>
+  <footer class="footer">
+    <p>Manish Khatri · Jaipur, Rajasthan</p>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // cursor glow + spotlight on name and cards
+    addEventListener('pointermove', e => {
+      root.style.setProperty('--x', e.clientX + 'px');
+      root.style.setProperty('--y', e.clientY + 'px');
+      const n = document.getElementById('name').getBoundingClientRect();
+      root.style.setProperty('--nx', (e.clientX - n.left) + 'px');
+      root.style.setProperty('--ny', (e.clientY - n.top) + 'px');
+    });
+    document.querySelectorAll('.card').forEach(c => c.addEventListener('pointermove', e => {
+      const r = c.getBoundingClientRect();
+      c.style.setProperty('--cx', (e.clientX - r.left) + 'px');
+      c.style.setProperty('--cy', (e.clientY - r.top) + 'px');
+    }));
+
+    // reveal on scroll (headings only, once)
+    if (!still) {
+      const io = new IntersectionObserver(es => es.forEach(x => {
+        if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); }
+      }), { threshold: 0.4 });
+      document.querySelectorAll('.q').forEach(q => io.observe(q));
+    } else document.querySelectorAll('.q').forEach(q => q.classList.add('in'));
+
+    // interactive console
+    const out = document.getElementById('out'), cmd = document.getElementById('cmd');
+    const data = {
+      help: 'Commands: whoami, skills, projects, experience, education, contact, clear',
+      whoami: 'Manish Khatri — Java developer from Jaipur. BCA 2026. Builds things that talk to databases.',
+      skills: 'Java | OOP | Collections | Lambdas | JDBC | SQL | MySQL | Hibernate | Spring | Spring MVC | Maven | Git',
+      projects: '1) Personal Finance Tracker (Hibernate + MySQL)   2) Library Management System (JDBC + Maven)',
+      experience: 'Java Full Stack Developer Intern @ AU Ignite Future Skill Academy (3 months)',
+      education: 'BCA, University of Rajasthan, CGPA 7.51/10 (2023–2026)',
+      contact: 'manishkhatri0221@gmail.com | +91 93510 19077 | github.com/manishkhatri0128'
+    };
+    const hist = []; let hi = 0;
+    function line(t, cls) { const p = document.createElement('p'); p.textContent = t; if (cls) p.className = cls; out.appendChild(p); out.scrollTop = out.scrollHeight; }
+    cmd.addEventListener('keydown', e => {
+      if (e.key === 'ArrowUp' && hist.length) { hi = Math.max(0, hi - 1); cmd.value = hist[hi]; e.preventDefault(); }
+      if (e.key !== 'Enter') return;
+      const v = cmd.value.trim().toLowerCase(); cmd.value = '';
+      if (!v) return;
+      hist.push(v); hi = hist.length;
+      line('mysql> ' + v, 'dim');
+      if (v === 'clear') out.innerHTML = '';
+      else if (data[v]) line(data[v]);
+      else line('ERROR 1064: unknown command "' + v + '". Try help.', 'err');
+    });
+  </script>
 
 </body>
+
 </html>
